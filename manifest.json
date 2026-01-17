@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Endpoint Tracker",
+  "version": "1.1.0",
+  "description": "Lista endpoints de APIs (fetch/XHR) con status code, tamaño y agrupación por método.",
+  "action": {
+    "default_title": "Endpoint Tracker",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "tabs", "webRequest"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}

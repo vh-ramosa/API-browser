@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Endpoint Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">Endpoint Tracker</div>
+
+      <div class="row">
+        <input id="search" type="text" placeholder="Filtrar (ej. /api, graphql, users, v1)..." />
+      </div>
+
+      <div class="row buttons">
+        <button id="refresh">Refrescar</button>
+        <button id="copy">Copiar</button>
+        <button id="export">Exportar JSON</button>
+        <button id="clear">Limpiar</button>
+      </div>
+
+      <div class="row toggles">
+        <label><input id="includeQS" type="checkbox" /> Incluir query string</label>
+      </div>
+
+      <div id="meta" class="meta"></div>
+    </header>
+
+    <main>
+      <div id="groups"></div>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
